@@ -1,0 +1,12 @@
+{
+    "name": "administrateur/boutique.dartproduction",
+    "autoload": {
+        "psr-4": {
+            "Administrateur\\BoutiqueDartproduction\\": "src/"
+        }
+    },
+    "require": {
+        "altorouter/altorouter": "^2.0",
+        "phpmailer/phpmailer": "^6.10"
+    }
+}

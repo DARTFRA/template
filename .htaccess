@@ -1,0 +1,10 @@
+Options -Indexes
+    RewriteEngine On
+    RewriteBase /
+
+    # Si le fichier ou le dossier existe, ne rien faire
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Sinon, rediriger vers index.php
+    RewriteRule ^(.*)$ index.php/$1 [QSA,L]
